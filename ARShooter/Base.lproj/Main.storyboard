@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AvenirNext.ttc">
+            <string>AvenirNext-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ARShooter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TE1-DK-j5q">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </arscnView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZJq-3x-2pR">
+                                <rect key="frame" x="175" y="321" width="24" height="24"/>
+                                <state key="normal" image="plus"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t5K-M6-hin">
+                                <rect key="frame" x="137.5" y="601" width="99" height="36"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
+                                <state key="normal" title="Add Targets"/>
+                                <connections>
+                                    <action selector="addTargets:" destination="BYZ-38-t0r" eventType="touchUpInside" id="msw-ib-6uD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="TE1-DK-j5q" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="55e-nA-frH"/>
+                            <constraint firstItem="t5K-M6-hin" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Eag-Sv-BFu"/>
+                            <constraint firstItem="TE1-DK-j5q" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Vfe-AT-rDp"/>
+                            <constraint firstItem="TE1-DK-j5q" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="bB4-KV-fgS"/>
+                            <constraint firstItem="TE1-DK-j5q" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="mxJ-dx-08u"/>
+                            <constraint firstItem="ZJq-3x-2pR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wYz-dV-3tP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="t5K-M6-hin" secondAttribute="bottom" constant="30" id="wrR-Q1-ZAh"/>
+                            <constraint firstItem="ZJq-3x-2pR" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="zEO-G7-ei4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="sceneView" destination="TE1-DK-j5q" id="BlR-mo-XAW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="118.29085457271366"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="plus" width="24" height="24"/>
+    </resources>
+</document>
